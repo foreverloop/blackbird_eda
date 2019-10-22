@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
 from matplotlib import pyplot as plt
 import numpy as np
 import seaborn as sns
