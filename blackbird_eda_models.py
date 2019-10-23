@@ -15,21 +15,11 @@ df_birds = pd.read_csv("blackbird.csv")
 print("setup and imports complete")
 
 
-# In[3]:
-
-
 print("data frame shape: ",np.shape(df_birds))
 df_birds.head()
 
-
-# In[14]:
-
-
 df_freq_count = df_birds.groupby(['Ring number']).size().reset_index(name='count')
 df_freq_count[df_freq_count['count'] > 1].sort_values(by=['count'], ascending=False).head(10)
-
-
-# In[3]:
 
 
 #method to list out missing values, and a percentage of the dataframe as a whole which is missing
